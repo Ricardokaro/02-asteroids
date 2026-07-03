@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node --check game.js)",
+      "Bash(timeout 30 bash -c 'until curl -sf http://localhost:5566 >/dev/null; do sleep 1; done')",
+      "PowerShell(Start-Process \"http://localhost:5566\")"
+    ]
+  }
+}
